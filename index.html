@@ -3,19 +3,20 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>Beauty Zone</title>
    </head>
    <body>
       <header>
-         <a href="#">
-            <img src="./images/logo.svg" alt="beauty zone" />
-         </a>
          <nav>
+            <a href="/">
+               <img src="./images/logo.svg" alt="beauty zone" />
+            </a>
+
             <ul>
-               <li><a href="#">Про нас</a></li>
-               <li><a href="#">Чому ми</a></li>
-               <li><a href="#">Наші процедури</a></li>
-               <li><a href="#">Контакти</a></li>
+               <li><a href="#about-section">Про нас</a></li>
+               <li><a href="#why-section">Чому ми</a></li>
+               <li><a href="#procedures-section">Наші процедури</a></li>
+               <li><a href="#contacts-section">Контакти</a></li>
             </ul>
          </nav>
          <ul>
@@ -38,13 +39,14 @@
       </header>
       <main>
          <section>
+            <p>Косметологічна клініка</p>
             <h1>beauty zone</h1>
             <button type="button">Замовити дзвінок</button>
             <p>
                Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
          </section>
-         <section>
+         <section id="about-section">
             <h2>Перевтілюйтесь в <span>beauty zone</span>!</h2>
             <article>
                <p>
@@ -60,7 +62,7 @@
             </article>
             <article></article>
          </section>
-         <section>
+         <section id="why-section">
             <h2>Чому люди <span>обирають нас</span></h2>
             <ul>
                <li>
@@ -92,7 +94,7 @@
                </li>
             </ul>
          </section>
-         <section>
+         <section id="procedures-section">
             <h2>Наші <span>процедури</span></h2>
             <ul>
                <li>
@@ -112,18 +114,29 @@
                </li>
             </ul>
          </section>
-         <section><h2>Як нас знайти</h2></section>
+         <section id="contacts-section">
+            <h2>Як нас знайти</h2>
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d77706.79396203837!2d13.2854734!3d52.5092344!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c97891ea21%3A0x4ca1983c254de1aa!2z0J_QvtGC0YHQtNCw0LzRgdC60LDRjyDQv9C70L7RidCw0LTRjA!5e0!3m2!1sru!2sil!4v1734297443324!5m2!1sru!2sil"
+               width="605"
+               height="481"
+               style="border: 5px"
+               allowfullscreen=""
+               loading="lazy"
+               referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+         </section>
       </main>
       <footer>
-         <a href="#">
-            <img src="./images/logo.svg" alt="beauty zone" />
-         </a>
          <nav>
+            <a href="/">
+               <img src="./images/logo.svg" alt="beauty zone" />
+            </a>
             <ul>
-               <li><a href="#">Про нас</a></li>
-               <li><a href="#">Чому ми</a></li>
-               <li><a href="#">Наші процедури</a></li>
-               <li><a href="#">Контакти</a></li>
+               <li><a href="#about-section">Про нас</a></li>
+               <li><a href="#why-section">Чому ми</a></li>
+               <li><a href="#procedures-section">Наші процедури</a></li>
+               <li><a href="#contacts-section">Контакти</a></li>
             </ul>
          </nav>
          <address>
@@ -157,7 +170,7 @@
                </li>
             </ul>
             <a href="#" target="_blank">Політика конфіденційності</a>
-            <p>© 2022 Дані захищені</p>
+            <p>&copy; 2022 Дані захищені</p>
          </address>
       </footer>
    </body>
