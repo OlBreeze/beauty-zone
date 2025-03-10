@@ -1,0 +1,44 @@
+.header {
+   position: absolute;
+   height: 106px;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 32px 99px;
+   background: rgba(255, 255, 255, 0.25);
+   backdrop-filter: blur(5px);
+
+   &__container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+   }
+
+   &__nav {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      align-items: center;
+      gap: 40px;
+   }
+
+   &__menu {
+      display: flex;
+      flex-direction: row;
+      gap: 56px;
+      flex-grow: 1;
+      justify-content: center;
+   }
+
+   &__ico {
+      fill: var(--color-prime-dark);
+   }
+
+   &-__rightmenu &__menu {
+      gap: 32px;
+   }
+
+   &__ico:hover {
+      fill: var(--color-prime-light);
+   }
+}

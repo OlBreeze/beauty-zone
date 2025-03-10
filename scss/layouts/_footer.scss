@@ -1,0 +1,53 @@
+.footer {
+   position: relative;
+   background-color: var(--color-prime-dark);
+   background-image: url('../images/footer.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   overflow: clip;
+
+   &__container {
+      display: flex;
+      padding: 56px 100px;
+      gap: 186px;
+   }
+   &__address {
+      font-style: normal;
+   }
+
+   &__social {
+      display: flex;
+      gap: 24px;
+      padding-top: 16px;
+   }
+   & a {
+      color: white;
+      text-decoration: none;
+      font-weight: 400;
+   }
+
+   &::after {
+      background-image: url('../images/medicines_footer.png');
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 278px;
+      height: 213px;
+      right: -30px;
+      bottom: -60px;
+
+      content: '';
+      /* background-size: 278px 213px; */
+   }
+
+   &__ico {
+      fill: white;
+   }
+   &__ico:hover {
+      fill: var(--color-prime-light);
+   }
+   &__politic-protected {
+      color: #747272;
+   }
+}

@@ -1,0 +1,76 @@
+.proc-section {
+   margin: 96px auto;
+   &__p {
+      color: var(--color-white);
+      width: calc(100% / 2);
+      margin-left: calc(100% / 2.5);
+      text-align: center;
+   }
+   &__proc-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+   }
+   &__format-item {
+      flex-basis: calc((100% - 32px) / 3);
+   }
+   &__formats-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+   }
+   &__format-card {
+      position: relative;
+      max-width: 344px;
+      height: 456px;
+      width: 344px;
+      border: 1px solid lightgray;
+      border-radius: 4px 120px;
+      transition: transform 0.3s;
+      display: flex;
+      align-items: flex-end;
+      // justify-content: center;
+   }
+
+   &__proc-image {
+      position: absolute;
+      border-radius: 4px 120px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+   }
+   &__format-card:hover {
+      transform: scale(1.05);
+   }
+   &__format-card.proc1 {
+      background-image: linear-gradient(
+            180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.725825) 84.61%,
+            var(--color-prime-dark) 101.39%
+         ),
+         url('../images/proc1.jpg');
+   }
+   &__format-card.proc2 {
+      background-image: linear-gradient(
+            180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.725825) 84.61%,
+            var(--color-prime-dark) 101.39%
+         ),
+         url('../images/proc2.jpg');
+   }
+
+   &__format-card.proc3 {
+      background-image: linear-gradient(
+            180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.725825) 84.61%,
+            var(--color-prime-dark) 101.39%
+         ),
+         url('../images/proc3.jpg');
+   }
+}
